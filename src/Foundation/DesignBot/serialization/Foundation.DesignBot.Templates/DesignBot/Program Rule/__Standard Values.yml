@@ -1,0 +1,21 @@
+﻿---
+ID: "809c0ece-2d8f-4230-858a-983927436822"
+Parent: "14f9a24a-5697-40ad-a429-6558a90d5f5b"
+Template: "14f9a24a-5697-40ad-a429-6558a90d5f5b"
+Path: /sitecore/templates/Foundation/DesignBot/Program Rule/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181024T222053Z
+    - ID: "406fef24-0886-49c5-86d2-fbabf9ceb860"
+      Hint: Name
+      Value: $name
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\jgregory

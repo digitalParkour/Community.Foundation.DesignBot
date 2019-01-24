@@ -1,0 +1,54 @@
+﻿---
+ID: "957ae84f-a008-476b-b3a1-e34de543a950"
+Parent: "86317df1-c537-4c03-8f19-53a3786e19f2"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/DesignBot/Content Editor/Context Menu/DesignBot
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/robot.png
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    $page = Get-Item .
+    $programItem = Get-Item "master:/sitecore/system/Settings/Rules/DesignBot/Rules"
+    
+    $props = @{
+        Parameters = @(
+          @{ Name = "programItem"; Title = "Choose Program"; Root = "/sitecore/system/Settings/Rules/DesignBot/Rules/"; Tab = "General" },
+          @{ Name = "crawlDepth"; Title = "Crawl Depth (0=this item only)"; Tab = "General" }
+        )
+        Title = ("DesignBot - for " + $page.DisplayName )
+        OkButtonName = "Proceed"
+        CancelButtonName = "Abort"
+        Width = 600
+        Height = 700
+    }
+    
+    $result = Read-Variable @props 
+    
+    if ($result -ne "ok") {
+        Exit
+    }
+    
+    $bot = New-Object Community.Foundation.DesignBot.Services.DesignBotService
+    $response = $bot.ApplyDesign($programItem, $page, $crawlDepth)
+    
+    # Show-ModalDialog -Control "OutputResult" -Parameters @{btn_0="Ok"; te="Design Program Complete. $response"; cp="Important Questions"} -Height 120 -Width 400
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: DesignBot...
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181026T220925Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\jgregory

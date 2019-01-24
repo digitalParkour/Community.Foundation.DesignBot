@@ -1,0 +1,192 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Community-Foundation-DesignBot</PackageName>
+      <Author>james.gregory@americaneagle.com</Author>
+      <Version>1.0.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>Community.Foundation.DesignBot 1.0
+
+** Requires Sitecore Powershell Extension (SPE) Module to be installed first.
+
+For CM or Standalone instances only.
+
+After installing you will create bot scripts by adding items and editing rules field under /sitecore/system/Settings/Rules/DesignBot/
+
+Remember to clear selections consistently; either always first or always last on each rule set.
+
+Run your bot script on any item in the content tree (and optionally N levels under it) but right clicking the item in Content editor and selecting the DesignBot context option.
+
+To customize rule and action options further, download source code from GitHub.
+
+===============================================
+This package installs the following files:
+===============================================
+\App_Config\Include\Foundation\Foundation.DesignBot.config
+\bin\Community.Foundation.DesignBot.dll
+\bin\Community.Foundation.DesignBot.pdb
+
+===============================================
+This package installs the following data items:
+===============================================
+/sitecore/Templates/Foundation/DesignBot/*
+/sitecore/system/Settings/Rules/Definitions/Tags/DesignBot/*
+/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/*
+/sitecore/system/Settings/Rules/DesignBot
+/sitecore/system/Modules/PowerShell/Script Library/DesignBot/*</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/templates/Foundation/DesignBot/{562609B4-311F-4D1F-AC86-60FFD699732A}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Foundation/DesignBot/DesignBot Program/__Standard Values/{55742B6E-33DF-4598-A09D-D90A89B84837}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Foundation/DesignBot/DesignBot Program/{341B47CA-10DE-471E-B82D-D7FBB5C48877}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Foundation/DesignBot/Program Rule/__Standard Values/{809C0ECE-2D8F-4230-858A-983927436822}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Foundation/DesignBot/Program Rule/{14F9A24A-5697-40AD-A429-6558A90D5F5B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Foundation/DesignBot/Program Rule/Data/{12D9D41D-06E7-4CA1-B985-D6CE6F0DBA16}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Foundation/DesignBot/Program Rule/Data/Name/{406FEF24-0886-49C5-86D2-FBABF9CEB860}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Foundation/DesignBot/Program Rule/Data/Rule/{709404DE-B4A9-46DC-A0EF-D1C7734454AD}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Templates</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/{42D05B0F-1F29-4E64-9AA1-C65D6DF7CF9E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Datasource - Clear Descendants Field/{1F2F1418-BE5F-44C3-8568-B0842F43CCA7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Datasource - Clear Field/{100EF220-FD5A-4B44-80CD-2102CAE5DE3B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Datasource - Set Descendants Field/{21D10AC5-387B-44E2-8751-45421E505CDF}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Datasource - Set Field/{A187D372-48A9-43A6-8320-952BAC707829}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Datasource - Swap Field Values/{A73D754F-7881-48C9-96C9-CE0656B4E85B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Has Placeholder match/{37411546-0E80-461E-906C-99B68954C044}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Has Placeholder/{FE2BE19F-00AD-477B-BDE8-1BD11A93E49B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Has Rendering in Placeholder with Param/{E7788FB8-D0EE-4706-9A76-FE758F2593B3}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Has Rendering in Placeholder/{ACF62966-1540-4796-87AA-D9E241F36111}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Has Rendering with Placeholder/{62E3ACAE-744D-4E25-9E5F-58772741219E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Has Rendering/{4689B214-864A-42D3-B54E-99BB0FEEFE54}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Parameter - Append Term/{CC76D5FA-8E31-4783-B7F5-50FC4EAFF891}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Parameter - Clear/{9945789E-2BAC-4E02-8A61-CCCA46177599}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Parameter - Remove Term/{CF689289-9E4B-4C59-BBD9-BDA5CA412AD0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Parameter - Set/{90DB2B4B-3E5C-4F9D-8EB3-F386347F4F6A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - All in Placeholder/{BFFEC3F4-9F8A-470E-A454-D8FC52531E9C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - All/{B0C976E8-B99F-437C-9DFE-3E67A17A3BC4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Clear/{CD96BA64-565D-4584-B35B-EADEA1FAEEA0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Device/{3A2C8EBB-0327-4126-AC5F-768D7F6849EB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - First in Placeholder/{E6FFFCB3-835D-48B3-926C-271C2E6949FF}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - First Rendering by Placeholder and Param/{917B87C4-B6E9-46E6-9DEE-B92A5BC12FC9}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - First Rendering by Placeholder/{63B97D48-8E7A-489E-86BF-FF9444CD5206}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - First Rendering/{5EC49499-AD66-4A5F-AAAA-146B9537FDD2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Inverse/{08EDC6BB-8731-46B3-AC60-DFA3CD4D27E7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Last in Placeholder/{3AFEF4D3-3FAF-414A-BF78-242D0600A50D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Last Rendering by Placeholder/{C82515EC-2DE3-4D3B-A580-6474084EE311}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Last Rendering/{40FBEF4A-CB7C-499C-8F5D-6DB5989E8606}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Placeholder match/{1B345278-CC26-4891-B4AD-807FDAC06BAE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Placeholder with Range/{5D1EFFD9-6F2E-48BA-A5EA-E168E8913854}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Rendering by Param/{3AF43C06-B6CB-437B-B48A-20B8911EBAF4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Rendering by Placeholder and Param/{34F53FDD-0C99-4DA0-A46B-7D60B3F21FD8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Rendering by Placeholder match/{50291657-5B6E-4E5C-9193-81373D44801D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Renderings by Datasource Field/{2F8DE26B-717F-41F8-825A-8E5924F7D8F5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Renderings by Placeholder with Range/{082B6ED4-980B-47F5-BF40-92DFD8D9553A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Renderings by Placeholder/{BE6DC7B3-27DF-4358-BB0E-B8C7381407C2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Pick - Renderings/{0331ED24-FA79-4B6D-B6D6-C17915BC3671}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Placeholders - move to/{AB0A78CD-7161-4863-B642-0FE15EEE923F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Placeholders - remove segment/{47E77A7D-30AB-46F7-B595-E14C59F826E4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Placeholders - set/{B67F50CC-C697-43CC-B93F-3A6CC5F78FF2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Placeholders - swap/{0A7F150B-9493-43AD-96C7-9E3384861B2E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Renderings - move before/{E42E1445-9ACE-4723-9758-16D5C08B0899}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Renderings - move to front/{686DF7A5-B696-4A9C-9A12-7A85CD98063A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Renderings - move/{9A0C8D71-BDC8-4BBB-9CB3-79DFC0A50100}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Renderings - remove all selected/{64C1A868-174E-4E51-8B52-439A03B34C12}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Renderings - remove certain selected/{D4A104D7-5444-46F4-AA50-40B66DC2EF98}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Renderings - sort by placeholder paths/{BCBB6A02-3BF9-419A-9E4F-97297D20DFB6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Tags/{949A9512-86AF-4022-94F3-42F1F4DCBAA8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Tags/Default/{6882785B-6821-4702-9093-9BB28FD59436}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/DesignBot/Visibility/{9419E4CF-F545-49C2-82C5-C3AF5A1A50FD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Tags/DesignBot/{CA29398A-ED15-4723-B025-05D4EC12E629}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Tags/DesignBot/Visibility/{5FD62B6E-B08A-4A6A-945D-599734965444}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/DesignBot/{AEBC97C1-8E3C-4073-A849-83569CDEDD6F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/DesignBot/Rules/{A6FC9765-0343-4F2A-A20D-3C9FA895996D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/DesignBot/Tags/{61C64655-9D11-4894-8E8C-4121A7C4C1E8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/DesignBot/Tags/Default/{BBE87145-474A-438A-BE6D-A4D797A71D34}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Rules</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Modules/PowerShell/Script Library/DesignBot/{09EB22CA-E0A4-47AB-A293-E9EA537E9F99}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/PowerShell/Script Library/DesignBot/Content Editor/{34982275-72AB-40F8-8029-B0D2DF906438}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/PowerShell/Script Library/DesignBot/Content Editor/Context Menu/{86317DF1-C537-4C03-8F19-53A3786E19F2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/PowerShell/Script Library/DesignBot/Content Editor/Context Menu/DesignBot/{957AE84F-A008-476B-B3A1-E34DE543A950}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Context Menu</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/Community.Foundation.DesignBot.dll</x-item>
+        <x-item>/bin/Community.Foundation.DesignBot.pdb</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>dlls</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Foundation/Foundation.DesignBot.config</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Config</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

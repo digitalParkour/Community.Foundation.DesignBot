@@ -1,0 +1,32 @@
+﻿---
+ID: "bbe87145-474a-438a-be6d-a4d797a71d34"
+Parent: "61c64655-9d11-4894-8e8c-4121a7c4c1e8"
+Template: "854ba861-63ea-4a0c-8c7b-541e9a7ec4c1"
+Path: /sitecore/system/Settings/Rules/DesignBot/Tags/Default
+DB: master
+SharedFields:
+- ID: "42f77151-098f-496a-94cf-590b7edeeabe"
+  Hint: Tags
+  Type: Multilist
+  Value: |
+    {CA29398A-ED15-4723-B025-05D4EC12E629}
+    {09340671-13CF-4181-A706-BE150B00D735}
+    {D8933FCB-48F3-468E-8FB6-8F2B5CFAF404}
+    {CCDEDBA3-3677-433E-BA09-64A3094808C9}
+    {83E58187-D1E5-4FB8-953E-EE89816EC0B5}
+    {5A355A23-0148-48CB-9017-90A696EAF155}
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150119T164127
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ameagle

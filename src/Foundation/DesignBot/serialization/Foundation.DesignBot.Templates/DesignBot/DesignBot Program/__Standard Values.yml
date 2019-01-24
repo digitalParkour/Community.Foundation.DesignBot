@@ -1,0 +1,23 @@
+﻿---
+ID: "55742b6e-33df-4598-a09d-d90a89b84837"
+Parent: "341b47ca-10de-471e-b82d-d7fbb5c48877"
+Template: "341b47ca-10de-471e-b82d-d7fbb5c48877"
+Path: /sitecore/templates/Foundation/DesignBot/DesignBot Program/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{14F9A24A-5697-40AD-A429-6558A90D5F5B}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181024T221324Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\jgregory
